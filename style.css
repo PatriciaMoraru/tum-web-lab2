@@ -43,7 +43,7 @@ Default: 1
   }
   
   body {
-    font-family: sans-serif;
+    font-family: "DM Sans", sans-serif;
     line-height: 1;
     font-weight: 400;
     color: #555;
@@ -78,10 +78,12 @@ Default: 1
     margin-bottom: 4.8rem;
   }
 
-  .btn:link, .btn:visited {
+  .btn:link, 
+  .btn:visited {
     display: inline-block;
     text-decoration: none;
     font-size: 2rem;
+    font-weight: 600;
     padding: 1.6rem 3.2rem;
     border-radius: 9px;
 
