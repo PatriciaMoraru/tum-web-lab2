@@ -75,9 +75,9 @@ Default: 9px
     gap: 1.2rem;
   }
 
-  /* .grid--2-cols {
+  .grid--2-cols {
     grid-template-columns: repeat(2, 1fr);
-  } */
+  }
 
   .grid--3-cols {
     gap: 3.6rem;
