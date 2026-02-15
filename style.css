@@ -362,6 +362,7 @@ Default: 9px
 
   .gallery-item {
     overflow: hidden;
+    border-radius: 1px;
   }
 
   .gallery-item img {
@@ -369,5 +370,12 @@ Default: 9px
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transform: scale(1);
+    backface-visibility: hidden;
+    transition: transform 0.4s;
+  }
+
+  .gallery-item img:hover {
+    transform: scale(1.1);
   }
 
