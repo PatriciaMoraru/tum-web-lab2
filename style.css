@@ -483,3 +483,19 @@ Default: 9px
     background-color: #c0737a;
   }
 
+   /*********************/
+  /* CTA */
+  /*********************/
+
+  .section-cta {
+    padding: 9.6rem 0;
+  }
+
+  .cta {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: #c0737a;
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+    height: 50rem;
+    border-radius: 11px;
+  }
