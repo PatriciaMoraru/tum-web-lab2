@@ -258,7 +258,7 @@ Default: 9px
   /* OUR SERVICES */
   /*********************/
   .our-services {
-    padding: 10rem 0;
+    padding: 9.6rem 0;
   }
 
   .services-header {
@@ -299,48 +299,42 @@ Default: 9px
   /*********************/
   /* WHY CHOOSE US */
   /*********************/
-.why-choose-us {
-    padding: 10rem 0;
+
+  .why-choose-us {
     background-color: #f9f1f2;
-}
+  }
 
-.why-img-box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+  .why-container {
+    padding: 9.6rem 3.2rem;
+  }
 
-.why-img {
-    max-width: 80%;
-}
-
-.why-text-box {
+  .why-text-box {
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
+  }
 
-.why-description {
+  .why-description {
     font-size: 2rem;
     line-height: 1.8;
     margin-bottom: 1.6rem;
-}
+  }
 
-.why-list {
+  .why-list {
     list-style: none;
     padding: 0;
     margin: 3.2rem 0;
-}
+  }
 
-.why-item {
+  .why-item {
     position: relative;
     padding-left: 3.2rem;
     font-size: 2rem;
     font-weight: 500;
     line-height: 1.4;
     color: #333;
-    margin-bottom: 2rem;
-}
+    margin-bottom: 1.2rem;
+  }
   
   .why-item::before {
     content: "❤";
@@ -349,5 +343,31 @@ Default: 9px
     top: 0.1rem;
     color: #c0737a;
     font-size: 2rem;
-}
+  }
+
+  .why-cta-text {
+    font-size: 1.8rem;
+    line-height: 1.6;
+    font-weight: 500;
+    color: #ad686e;
+    font-style: italic;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.6rem;
+    padding: 9.6rem 1.6rem;
+  }
+
+  .gallery-item {
+    overflow: hidden;
+  }
+
+  .gallery-item img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 
