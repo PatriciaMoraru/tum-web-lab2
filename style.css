@@ -534,6 +534,13 @@ Default: 9px
     padding: 9.6rem 0;
   }
 
+  .tag {
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+  }
+
   .blog-title {
     font-size: 2rem;
     color: #333;
@@ -543,6 +550,22 @@ Default: 9px
 
   .blog-attributes {
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  .blog-attribute {
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+  }
+
+  .blog-icon {
+    height: 2.4rem;
+    width: 2.4rem;
+    color: #c0737a;
   }
 
   .blog-img {
