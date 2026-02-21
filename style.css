@@ -392,9 +392,7 @@ Default: 9px
 
   .about-text-box {
     padding-right: 4.8rem;
-  }
-
-  .about-img-box {
+  }  .about-img-box {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -494,8 +492,30 @@ Default: 9px
   .cta {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    background-color: #c0737a;
+    background-image: linear-gradient(to right bottom, #cd8f95, #c0737a);
     box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
     height: 50rem;
     border-radius: 11px;
+    overflow: hidden;
+  }
+
+  .cta-img-box {
+    background-image: linear-gradient(to right bottom, hsla(354, 38%, 68%, 0.3), hsla(355, 38%, 60%, 0.3)), url("img/cta.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .cta-text-box {
+    padding: 6.4rem;
+    color: #f9f1f2;
+  }
+
+  .cta-text {
+    font-size: 1.8rem;
+    line-height: 1.8;
+  }
+
+  .cta .heading-secondary {
+    color: #f9f1f2;
+    margin-bottom: 3.2rem;
   }
