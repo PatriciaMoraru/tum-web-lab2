@@ -255,11 +255,43 @@
               </p>
 
               <form class="cta-form" action="#">
-                <label for="full-name">Numele d-vstră</label>
-                <input id="full-name" type="text" placeholder="Nume Prenume"/>
+                <div>
+                  <label for="full-name">Numele d-vstră</label>
+                  <input id="full-name" 
+                        type="text" 
+                        placeholder="Nume Prenume" 
+                        required/>
+                </div>
 
-                <label for="email">Email</label>
-                <input id="email" type="email" placeholder="email@exemplu.com"/>
+                <div>
+                  <label for="email">Email</label>
+                  <input id="email" 
+                        type="email" 
+                        placeholder="email@exemplu.com" 
+                        required/>
+                </div>
+
+                <div>
+                  <label for="phone">Telefon</label>
+                  <input id="phone" 
+                        type="tel" 
+                        placeholder="06xx xxx xxx" 
+                        required/>
+                </div>
+
+                <div>
+                  <label for="select-where">Unde ai aflat despre noi?</label>
+                  <select id="select-where" required>
+                    <option value="">Selectează o opțiune</option>
+                    <option value="friends">Prieteni</option>
+                    <option value="family">Familie</option>
+                    <option value="google">Google</option>
+                    <option value="facebook">Facebook</option>
+                    <option value="other">Altul</option>
+                </select>
+                </div>
+
+
                 <button class="btn">Programează-te</button>
               </form>
             </div>
