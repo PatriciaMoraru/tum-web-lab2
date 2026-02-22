@@ -475,66 +475,33 @@ Default: 9px
     width: 100%;
   }
 
-  .accordion {
+  .about-info {
     display: flex;
     flex-direction: column;
-    gap: 1.6rem;
-    margin-top: 4.8rem;
+    gap: 2.4rem;
+    margin-top: 3.2rem;
   }
 
-  .accordion-item {
+  .about-info-block {
     border-top: 1px solid #ddd;
-    padding-top: 2.4rem;
-  }
-
-  .accordion-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
-    list-style: none;
-  }
-
-  summary.accordion-header {
-    display: flex;
-  }
-
-  .accordion-title {
-    font-size: 2rem;
-    font-weight: 600;
-    color: #333;
-  }
-
-  .accordion-icon::after {
-    content: "+";
-    font-size: 2.4rem;
-    font-weight: 300;
-    color: #333;
-    transition: transform 0.3s;
-  }
-
-  details[open] .accordion-icon::after {
-    content: "-";
-  }
-
-  .accordion-content {
     padding-top: 1.6rem;
   }
 
-  .accordion-content p {
-    font-size: 1.8rem;
-    line-height: 1.8;
-    color: #555;
+  .about-info-block .heading-tertiary {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1.2rem;
   }
 
-  .accordion-list {
+  .about-list {
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 1.2rem;
+    gap: 0.8rem;
   }
 
-  .accordion-list li {
+  .about-list li {
     position: relative;
     padding-left: 2.4rem;
     font-size: 1.8rem;
@@ -543,7 +510,7 @@ Default: 9px
     color: #555;
   }
 
-  .accordion-list li::before {
+  .about-list li::before {
     content: "";
     position: absolute;
     left: 0;
