@@ -429,6 +429,11 @@ Default: 9px
     font-style: italic;
   }
 
+  .why-cta-text .link:link,
+  .why-cta-text .link:visited {
+    display: inline;
+  }
+
   .gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
