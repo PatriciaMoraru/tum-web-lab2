@@ -120,4 +120,16 @@ Instead, 1em = 1rem = 16px*/
     .about-doctor .grid--2-cols {
       grid-template-columns: 5fr 3fr;
     }
+
+    .cta {
+      grid-template-columns: 3fr 2fr;
+    }
+
+    .cta-form {
+      grid-template-columns: 1fr;
+    }
+
+    .btn--form {
+      grid-column: 1;
+    }
   }
