@@ -376,10 +376,11 @@ Default: 9px
     background-color: #f6ebec;
     border-radius: 9px;
     text-align: center;
-    transition: box-shadow 0.5s;
+    transition: all 0.5s;
   }
 
   .service-box:hover {
+    transform: translateY(-1.2rem);
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
   }
 
