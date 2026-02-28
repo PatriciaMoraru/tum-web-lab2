@@ -302,6 +302,15 @@ Instead, 1em = 1rem = 16px*/
       max-width: 100%;
     }
 
+    .grid--footer {
+      grid-template-columns: 1fr;
+    }
+
+    .grid--footer > .nav-col:first-of-type { grid-row: 1; }
+    .grid--footer > .nav-col:last-of-type { grid-row: 2; }
+    .grid--footer > .address-col { grid-row: 3; }
+    .grid--footer > .logo-col { grid-row: 4; }
+
     .cta {
       grid-template-columns: 1fr;
     }
