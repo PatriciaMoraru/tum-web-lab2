@@ -81,4 +81,43 @@ Instead, 1em = 1rem = 16px*/
     .hero-img {
       width: 60%
     }
+
+    .blog-content {
+      padding: 2.4rem 3.2rem 3.2rem 3.2rem;
+    }
+
+    .why-choose-us .grid--2-cols {
+      grid-template-columns: 1fr;
+    }
+
+    .why-container {
+      padding: 9.6rem 3.2rem 1.6rem 3.2rem;
+      order: -1;
+      text-align: center;
+    }
+
+    .why-item {
+      padding-left: 0;
+      text-align: center;
+    }
+
+    .why-item::before {
+      position: static;
+      margin-right: 0.8rem;
+    }
+
+    .grid {
+      row-gap: 3.2rem;
+    }
+
+    .gallery {
+      grid-template-columns: repeat(6, 1fr);
+      max-width: 100%;
+      justify-self: center;
+      padding: 1.6rem;
+    }
+
+    .about-doctor .grid--2-cols {
+      grid-template-columns: 5fr 3fr;
+    }
   }

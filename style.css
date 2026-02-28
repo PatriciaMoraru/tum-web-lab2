@@ -470,7 +470,9 @@ Default: 9px
 
   .about-text-box {
     padding-right: 4.8rem;
-  }  .about-img-box {
+  }  
+  
+  .about-img-box {
     display: flex;
     align-items: center;
     justify-content: center;
