@@ -132,4 +132,8 @@ Instead, 1em = 1rem = 16px*/
     .btn--form {
       grid-column: 1;
     }
+
+    .btn-mobile-nav {
+      display: block;
+    }
   }
