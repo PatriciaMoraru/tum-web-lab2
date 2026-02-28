@@ -53,6 +53,7 @@ Default: 9px
   html {
     font-size: 62.5%;
     scroll-behavior: smooth;
+    overflow-x: hidden;
   }
   
   body {
@@ -60,6 +61,7 @@ Default: 9px
     line-height: 1;
     font-weight: 400;
     color: #555;
+    overflow-x: hidden;
   }
 
   /*********************/
@@ -239,6 +241,7 @@ Default: 9px
     /* Because we want the header to be sticky later*/
     height: 9.6rem;
     padding: 0 4.8rem;
+    position: relative;
   }
 
   .sticky {
@@ -314,7 +317,6 @@ Default: 9px
 
   .icon-mobile-nav[name="close-outline"] {
     display: none;
-
   }
   
   /*********************/
