@@ -226,8 +226,6 @@ Default: 9px
     margin-bottom: 4.8rem !important;
   }
 
-
-
   /*********************/
   /* HEADER */
   /*********************/
@@ -324,6 +322,51 @@ Default: 9px
     display: none;
   }
   
+  /*********************/
+  /* MASCOT BOT */
+  /*********************/
+  .hero-img-box {
+    position: relative;
+  }
+
+  .mascot-bot {
+    position: fixed;
+    right: 2.4rem;
+    bottom: 2.4rem;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    background-color: #ff91a4;
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.12);
+    pointer-events: none;
+    z-index: 998;
+  }
+
+  .mascot-bot > .bow,
+  .mascot-bot > .mouth {
+    display: none;
+  }
+
+  .mascot-bot .eye {
+    width: 10px;
+    height: 10px;
+    background-color: #444;
+    display: block;
+    border-radius: 50%;
+    border: 8px solid #fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .mascot-bot .eye--left {
+    left: 10px;
+  }
+
+  .mascot-bot .eye--right {
+    right: 10px;
+  }
+
   /*********************/
   /* HERO SECTION */
   /*********************/
