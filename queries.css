@@ -137,8 +137,10 @@ Instead, 1em = 1rem = 16px*/
       grid-column: 1;
     }
 
+    /* Mobile navigation */
     .btn-mobile-nav {
       display: block;
+      z-index: 999;
     }
 
     .main-nav {
