@@ -487,35 +487,36 @@
   /* Blog */
   /*********************/
 
-  .section-blog {
+  /* MIGRATED TO TAILWIND */
+  /* .section-blog {
     padding: 9.6rem 0;
-  }
+  } */
 
-  .blog-box {
+  /* .blog-box {
     box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
     border-radius: 11px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     transition: all 0.4s;
-  }
+  } */
 
-  .blog-box:hover {
+  /* .blog-box:hover {
     transform: translateY(-1.2rem);
     box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
-  }
+  } */
 
-  .blog-content {
+  /* .blog-content {
     padding: 3.2rem 4.8rem 4.8rem 4.8rem;
-  }
+  } */
 
-  .blog-tags {
+  /* .blog-tags {
     margin-bottom: 1.2rem;
     display: flex;
     gap: 0.8rem;
-  }
+  } */
 
-  .tag {
+  /* .tag {
     display: inline-block;
     padding: 0.4rem 0.8rem;
     font-size: 1.2rem;
@@ -523,7 +524,7 @@
     color: #fff;
     border-radius: 100px;
     font-weight: 600;
-  }
+  } */
 
   .tag--health {
     background-color: #42b7b2;
