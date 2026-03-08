@@ -367,41 +367,46 @@
         <div class="container">
           <div class="cta grid grid-cols-[2fr_1fr] bg-[linear-gradient(to_right_bottom,_#cd8f95,_#c0737a)] shadow-[0_2.4rem_4.8rem_rgba(0,0,0,0.15)] rounded-[11px] overflow-hidden">
             <div class="cta-text-box pt-[4.8rem] pb-[6.4rem] px-[6.4rem] text-[#f9f1f2]">
-              <h2 class="heading-secondary">Programează-te la o consultație!</h2>
+              <h2 class="heading-secondary text-inherit mb-[3.2rem]">Programează-te la o consultație!</h2>
               <p class="cta-text text-[1.8rem] leading-[1.8] mb-[4rem]">
                 O programare la timp este un pas important pentru bunăstarea ta. 
                 Completează formularul, iar noi te vom contacta în cel mai scurt 
                 timp.
               </p>
 
-              <form class="cta-form" action="#">
-                <div>
-                  <label for="full-name">Numele d-vstră</label>
+              <form class="cta-form grid grid-cols-2 gap-x-[3.2rem] gap-y-[2.4rem]" action="#">
+                <div class="flex flex-col justify-end">
+                  <label for="full-name" class="block text-[1.6rem] font-medium mb-[1.2rem]">Numele d-vstră</label>
                   <input id="full-name" 
+                        class="w-full p-[1.2rem] text-[1.8rem] font-[inherit] text-[#464545] border-none bg-[#f9f1f2] rounded-[9px] shadow-[0_1px_2px_rgba(0,0,0,0.1)] placeholder:text-[#aaa] focus:outline-none focus:shadow-[0_0_0_0.8rem_hsla(354,38%,84%,0.5)]"
                         type="text" 
                         placeholder="Nume Prenume" 
                         required/>
                 </div>
 
-                <div>
-                  <label for="email">Email</label>
+                <div class="flex flex-col justify-end">
+                  <label for="email" class="block text-[1.6rem] font-medium mb-[1.2rem]">Email</label>
                   <input id="email" 
+                        class="w-full p-[1.2rem] text-[1.8rem] font-[inherit] text-[#464545] border-none bg-[#f9f1f2] rounded-[9px] shadow-[0_1px_2px_rgba(0,0,0,0.1)] placeholder:text-[#aaa] focus:outline-none focus:shadow-[0_0_0_0.8rem_hsla(354,38%,84%,0.5)]"
                         type="email" 
                         placeholder="email@exemplu.com" 
                         required/>
                 </div>
 
-                <div>
-                  <label for="phone">Telefon</label>
+                <div class="flex flex-col justify-end">
+                  <label for="phone" class="block text-[1.6rem] font-medium mb-[1.2rem]">Telefon</label>
                   <input id="phone" 
+                        class="w-full p-[1.2rem] text-[1.8rem] font-[inherit] text-[#464545] border-none bg-[#f9f1f2] rounded-[9px] shadow-[0_1px_2px_rgba(0,0,0,0.1)] placeholder:text-[#aaa] focus:outline-none focus:shadow-[0_0_0_0.8rem_hsla(354,38%,84%,0.5)]"
                         type="tel" 
                         placeholder="06xx xxx xxx" 
                         required/>
                 </div>
 
-                <div>
-                  <label for="select-where">Cum ai aflat de noi?</label>
-                  <select id="select-where" required>
+                <div class="flex flex-col justify-end">
+                  <label for="select-where" class="block text-[1.6rem] font-medium mb-[1.2rem]">Cum ai aflat de noi?</label>
+                  <select id="select-where" 
+                        class="w-full p-[1.2rem] text-[1.8rem] font-[inherit] text-[#464545] border-none bg-[#f9f1f2] rounded-[9px] shadow-[0_1px_2px_rgba(0,0,0,0.1)] focus:outline-none focus:shadow-[0_0_0_0.8rem_hsla(354,38%,84%,0.5)]"
+                        required>
                     <option value="">Selectează o opțiune</option>
                     <option value="friends">Prieteni</option>
                     <option value="family">Familie</option>
@@ -411,7 +416,7 @@
                 </select>
                 </div>
 
-                <button class="btn btn--form">Programează-te</button>
+                <button class="btn btn--form focus:outline-none focus:shadow-[0_0_0_0.8rem_hsla(354,38%,84%,0.5)]">Programează-te</button>
               </form>
             </div>
             <div 
