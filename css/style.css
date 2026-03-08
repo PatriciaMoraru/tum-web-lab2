@@ -435,17 +435,18 @@
     width: 100%;
   } */
 
-  .about-info {
+  /* MIGRATED TO TAILWIND */
+  /* .about-info {
     display: flex;
     flex-direction: column;
     gap: 2.4rem;
     margin-top: 3.2rem;
-  }
+  } */
 
-  .about-info-block {
+  /* .about-info-block {
     border-top: 1px solid #ddd;
     padding-top: 1.6rem;
-  }
+  } */
 
   .about-info-block .heading-tertiary {
     font-size: 2rem;
@@ -454,12 +455,13 @@
     margin-bottom: 1.2rem;
   }
 
-  .about-list {
+  /* MIGRATED TO TAILWIND */
+  /* .about-list {
     list-style: none;
     display: flex;
     flex-direction: column;
     gap: 0.8rem;
-  }
+  } */
 
   .about-list li {
     position: relative;
