@@ -95,6 +95,13 @@
   }
   
   /*********************/
+  /* MOBILE CALL BUTTON */
+  /*********************/
+  .mobile-call-btn {
+    display: none;
+  }
+
+  /*********************/
   /* MASCOT BOT */
   /*********************/
   .mascot-bot {
