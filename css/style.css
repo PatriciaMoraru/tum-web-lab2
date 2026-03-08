@@ -721,44 +721,51 @@
     gap: 2.4rem;
   } */
 
-  .social-icon {
+  /* MIGRATED TO TAILWIND */
+  /* .social-icon {
     width: 3.6rem;
     height: 3.6rem;
-  }
+  } */
 
-  .copyright {
+  /* MIGRATED TO TAILWIND */
+  /* .copyright {
     font-size: 1.4rem;
     color: #767676;
     line-height: 1.6;
     margin-top: auto;
-  }
+  } */
 
-  .contacts {
+  /* MIGRATED TO TAILWIND */
+  /* .contacts {
     font-style: normal;
     font-size: 1.6rem;
     line-height: 1.6;
-  }
+  } */
 
-  .address {
+  /* MIGRATED TO TAILWIND */
+  /* .address {
     margin-bottom: 2.4rem;
-  }
+  } */
 
-  .footer-nav {
+  /* MIGRATED TO TAILWIND */
+  /* .footer-nav {
     list-style: none;
     display: flex;
     flex-direction: column;
     gap: 2.4rem;
-  }
+  } */
 
-  .footer-link:link,
+  /* MIGRATED TO TAILWIND */
+  /* .footer-link:link,
   .footer-link:visited {
     text-decoration: none;
     font-size: 1.6rem;
     color: #767676;
     transition: all 0.3s;
-  }
+  } */
 
-  .footer-link:hover,
+  /* MIGRATED TO TAILWIND */
+  /* .footer-link:hover,
   .footer-link:active {
     color: #555;
-  }
+  } */
