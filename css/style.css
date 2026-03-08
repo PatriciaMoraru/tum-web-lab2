@@ -2,17 +2,16 @@
   /* HEADER */
   /*********************/
 
-  .header {
+  /* MIGRATED TO TAILWIND */
+  /* .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #f9f1f2;
-
-    /* Because we want the header to be sticky later*/
     height: 9.6rem;
     padding: 0 4.8rem;
     position: relative;
-  }
+  } */
 
   /* STICKY NAVIGATION */
   .sticky .header {
@@ -32,9 +31,10 @@
     margin-top: 8rem;
   }
 
-  .logo {
+  /* MIGRATED TO TAILWIND */
+  /* .logo {
     height: 6rem;
-  }
+  } */
 
   /*********************/
   /* NAVIGATION */
@@ -260,24 +260,25 @@
   /*********************/
   /* OUR SERVICES */
   /*********************/
-  .our-services {
+  /* MIGRATED TO TAILWIND */
+  /* .our-services {
     padding: 9.6rem 0;
-  }
+  } */
 
-  .services-header {
+  /* .services-header {
     text-align: center;
     margin-bottom: 4.8rem;
-  }
+  } */
 
-
-  .our-services-description {
+  /* .our-services-description {
     font-size: 1.8rem;
     line-height: 1.6;
     color: #6b7280;
     margin-bottom: 4.8rem;
-  }
+  } */
 
-  .service-box {
+  /* MIGRATED TO TAILWIND */
+  /* .service-box {
     padding: 3.2rem;
     font-size: 1.8rem;
     font-weight: 400;
@@ -286,18 +287,18 @@
     border-radius: 9px;
     text-align: center;
     transition: all 0.5s;
-  }
+  } */
 
-  .service-box:hover {
+  /* .service-box:hover {
     transform: translateY(-1.2rem);
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-  }
+  } */
 
-  .service-icon img {
+  /* .service-icon img {
     width: 6rem;
     height: 6rem;
     margin-bottom: 2rem;
-  }
+  } */
 
 
   /*********************/
