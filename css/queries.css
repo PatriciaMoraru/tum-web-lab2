@@ -125,11 +125,11 @@ Instead, 1em = 1rem = 16px*/
       grid-template-columns: 5fr 3fr;
     }
 
-    .cta {
+    #page .cta {
       grid-template-columns: 3fr 2fr;
     }
 
-    .cta-form {
+    #page .cta-form {
       grid-template-columns: 1fr;
     }
 
@@ -313,7 +313,7 @@ Instead, 1em = 1rem = 16px*/
     .grid--footer > .address-col { grid-row: 3; }
     .grid--footer > .logo-col { grid-row: 4; }
 
-    .cta {
+    #page .cta {
       grid-template-columns: 1fr;
     }
     
@@ -322,7 +322,7 @@ Instead, 1em = 1rem = 16px*/
       grid-row: 1;
     }
 
-    .cta-text-box {
+    #page .cta-text-box {
       padding: 3.2rem 4.8rem 3.2rem 4.8rem;
     }
   }
