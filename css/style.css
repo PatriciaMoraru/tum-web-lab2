@@ -376,24 +376,25 @@
     padding: 9.6rem 1.6rem;
   } */
 
-  .gallery-item {
+  /* MIGRATED TO TAILWIND */
+  /* .gallery-item {
     overflow: hidden;
     border-radius: 1px;
     aspect-ratio: 1;
-  }
+  } */
 
-  .gallery-item img {
+  /* .gallery-item img {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
     backface-visibility: hidden;
     transition: transform 0.4s;
-  }
+  } */
 
-  .gallery-item img:hover {
+  /* .gallery-item img:hover {
     transform: scale(1.1);
-  }
+  } */
 
   /*********************/
   /* ABOUT DOCTOR */
