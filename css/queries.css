@@ -229,7 +229,7 @@ Instead, 1em = 1rem = 16px*/
       margin-bottom: 1.6rem;
     }
 
-    .grid--footer {
+    #page .grid--footer {
       grid-template-columns: repeat(2, 1fr);
       row-gap: 6.4rem;
     }
@@ -243,20 +243,20 @@ Instead, 1em = 1rem = 16px*/
       align-items: center;
     }
 
-    .logo-col,
+    #page .logo-col,
     .address-col {
       text-align: center;
     }
 
-    .logo-col {
+    #page .logo-col {
       align-items: center;
     }
 
-    .social-links {
+    #page .social-links {
       justify-content: center;
     }
 
-    .footer {
+    #page .footer {
       padding: 9.6rem 0;
     }
   }
@@ -304,14 +304,14 @@ Instead, 1em = 1rem = 16px*/
       max-width: 100%;
     }
 
-    .grid--footer {
+    #page .grid--footer {
       grid-template-columns: 1fr;
     }
 
-    .grid--footer > .nav-col:first-of-type { grid-row: 1; }
-    .grid--footer > .nav-col:last-of-type { grid-row: 2; }
-    .grid--footer > .address-col { grid-row: 3; }
-    .grid--footer > .logo-col { grid-row: 4; }
+    #page .grid--footer > .nav-col:first-of-type { grid-row: 1; }
+    #page .grid--footer > .nav-col:last-of-type { grid-row: 2; }
+    #page .grid--footer > .address-col { grid-row: 3; }
+    #page .grid--footer > .logo-col { grid-row: 4; }
 
     #page .cta {
       grid-template-columns: 1fr;

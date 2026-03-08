@@ -679,40 +679,47 @@
   /* FOOTER */
   /*********************/
 
-  .footer {
+  /* MIGRATED TO TAILWIND */
+  /* .footer {
     padding: 12.8rem 0;
     border-top: 1px solid #eee;
-  }
+  } */
 
-  .grid--footer {
+  /* MIGRATED TO TAILWIND */
+  /* .grid--footer {
     grid-template-columns: 1.25fr 1.25fr 1fr 1fr;
-  }
+  } */
 
-  .logo-col {
+  /* MIGRATED TO TAILWIND */
+  /* .logo-col {
     display: flex;
     flex-direction: column;
-  }
+  } */
 
-  .footer-logo {
+  /* MIGRATED TO TAILWIND */
+  /* .footer-logo {
     display: block;
     margin: 0 auto 3.2rem;
-  }
+  } */
 
-  .footer-img {
+  /* MIGRATED TO TAILWIND */
+  /* .footer-img {
     height: 12rem;
-  }
+  } */
 
-  .footer-heading {
+  /* MIGRATED TO TAILWIND */
+  /* .footer-heading {
     font-size: 1.8rem;
     font-weight: 700;
     margin-bottom: 4rem;
-  }
+  } */
 
-  .social-links {
+  /* MIGRATED TO TAILWIND */
+  /* .social-links {
     list-style: none;
     display: flex;
     gap: 2.4rem;
-  }
+  } */
 
   .social-icon {
     width: 3.6rem;
