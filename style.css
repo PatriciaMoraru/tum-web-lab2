@@ -329,15 +329,24 @@ Default: 9px
     position: fixed;
     right: 2.4rem;
     bottom: 2.4rem;
-    width: 7rem;
-    height: 7rem;
-    border-radius: 50%;
-    background-color: #ff91a4;
-    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.12);
-    pointer-events: none;
+    width: 8rem;
+    height: 8rem;
     z-index: 998;
-    animation: jump 2s infinite;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
     transform-origin: center bottom;
+    opacity: 0;
+    animation:
+      fadeIn 0.6s ease-out 2s forwards,
+      jump 4s 2.6s infinite;
+  }
+
+  .mascot-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.15));
   }
 
   @keyframes jump {
@@ -363,13 +372,16 @@ Default: 9px
     position: fixed;
     right: 2.4rem;
     bottom: 1.6rem;
-    width: 7rem;
+    width: 8rem;
     height: 8px;
     background-color: rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     z-index: 997;
     pointer-events: none;
-    animation: shadow 2s infinite;
+    opacity: 0;
+    animation:
+      fadeIn 0.6s ease-out 2s forwards,
+      shadow 4s 2.6s infinite;
   }
 
   @keyframes shadow {
@@ -395,86 +407,52 @@ Default: 9px
     }
   }
 
-  .mascot-bot .bow {
-    display: none;
+  /* Delayed entrance */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(2rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 
-  /* EYES — white base, small dark pupil inside */
-  .mascot-bot .eye {
-    width: 20px;
-    height: 20px;
+  /* Hover tooltip */
+  .mascot-tooltip {
+    position: absolute;
+    bottom: 110%;
+    right: 0;
     background-color: #fff;
-    display: block;
-    border-radius: 50%;
-    position: absolute;
-    top: 26%;
-    box-shadow: inset 0 1px 3px rgba(0,0,0,0.08);
-    animation: blink 3s infinite;
+    color: #333;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.4;
+    padding: 1rem 1.4rem;
+    border-radius: 9px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s, transform 0.3s;
+    transform: translateY(4px);
+    pointer-events: none;
   }
 
-  @keyframes blink {
-    0%, 35% { transform: scaleY(1); }
-    40%     { transform: scaleY(0.1); }
-    45%, 100% { transform: scaleY(1); }
-  }
-
-  .mascot-bot .eye--left {
-    left: 12px;
-  }
-
-  .mascot-bot .eye--right {
-    right: 12px;
-  }
-
-  /* Pupil inside each eye */
-  .mascot-bot .eye::after {
+  .mascot-tooltip::after {
     content: '';
-    width: 9px;
-    height: 9px;
-    background-color: #333;
-    border-radius: 50%;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-40%, -40%);
+    top: 100%;
+    right: 2rem;
+    border: 6px solid transparent;
+    border-top-color: #fff;
   }
 
-  /* Tiny highlight dot on pupil */
-  .mascot-bot .eye::before {
-    content: '';
-    width: 4px;
-    height: 4px;
-    background-color: #fff;
-    border-radius: 50%;
-    position: absolute;
-    top: 20%;
-    left: 55%;
-    z-index: 1;
-  }
-
-  /* MOUTH */
-  .mascot-bot .mouth {
-    width: 30px;
-    height: 15px;
-    background-color: #3a3a3a;
-    display: block;
-    border-bottom-right-radius: 15px;
-    border-bottom-left-radius: 15px;
-    overflow: hidden;
-    position: absolute;
-    bottom: 14px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .mascot-bot .mouth::before {
-    content: '';
-    width: 18px;
-    height: 18px;
-    background-color: #ff6b6b;
-    display: block;
-    border-radius: 50%;
-    margin: 6px auto 0 auto;
+  .mascot-bot:hover .mascot-tooltip {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
   }
 
   /*********************/
