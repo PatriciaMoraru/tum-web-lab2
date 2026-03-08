@@ -526,60 +526,61 @@
     font-weight: 600;
   } */
 
-  .tag--health {
+  /* MIGRATED TO TAILWIND */
+  /* .tag--health {
     background-color: #42b7b2;
-  }
+  } */
 
-  .tag--pregnancy {
+  /* .tag--pregnancy {
     background-color: #f7afab;
-  }
+  } */
 
-  .tag--prevention {
+  /* .tag--prevention {
     background-color: #919e85;
-  }
+  } */
 
-  .blog-title {
+  /* .blog-title {
     font-size: 2rem;
     color: #333;
     font-weight: 600;
     margin-bottom: 1.2rem;
-  }
+  } */
 
-  .blog-description {
+  /* .blog-description {
     font-size: 1.4rem;
     line-height: 1.6;
     color: #777;
     margin-bottom: 2.4rem;
-  }
+  } */
 
-  .blog-attributes {
+  /* .blog-attributes {
     list-style: none;
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
-  }
+  } */
 
-  .blog-attribute {
+  /* .blog-attribute {
     font-size: 1.6rem;
     display: flex;
     align-items: center;
     gap: 1.6rem;
-  }
+  } */
 
-  .blog-icon {
+  /* .blog-icon {
     height: 2.4rem;
     width: 2.4rem;
     color: #c0737a;
-  }
+  } */
 
-  .blog-img {
+  /* .blog-img {
     width: 100%;
-  }
+  } */
 
-  .all-blogs {
+  /* .all-blogs {
     text-align: center;
     font-size: 1.8rem;
-  }
+  } */
 
 
   /*********************/
