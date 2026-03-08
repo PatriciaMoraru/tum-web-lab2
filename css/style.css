@@ -602,7 +602,7 @@
   }
 
   .cta-img-box {
-    background-image: linear-gradient(to right bottom, hsla(354, 38%, 68%, 0.3), hsla(355, 38%, 60%, 0.3)), url("img/cta.jpg");
+    background-image: linear-gradient(to right bottom, hsla(354, 38%, 68%, 0.3), hsla(355, 38%, 60%, 0.3)), url("../img/cta.jpg");
     background-size: cover;
     background-position: center;
   }
