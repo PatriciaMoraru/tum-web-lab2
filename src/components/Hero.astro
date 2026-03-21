@@ -1,0 +1,29 @@
+---
+const { frontmatter } = Astro.props;
+---
+
+<section class="section-hero bg-[#f9f1f2] pt-[4.8rem] pb-[9.6rem]">
+  <div class="hero max-w-[130rem] mx-auto px-[3.2rem] grid grid-cols-2 gap-[9.6rem] items-center">
+    <div class="hero-text-box">
+      <h1 class="heading-primary">
+        {frontmatter.headline}
+      </h1>
+
+      <p class="hero-description text-[2rem] leading-[1.6] mb-[4.8rem]">
+        {frontmatter.description}
+      </p>
+
+      <a href="#cta" class="btn btn--full margin-right-sm">{frontmatter.ctaPrimary}</a>
+      <a href="#servicii" class="btn btn--outline">{frontmatter.ctaSecondary} &darr;</a>
+    </div>
+
+    <div class="hero-img-box">
+      <img src={frontmatter.heroImage} alt={frontmatter.heroImageAlt} class="hero-img w-full" />
+      <div class="mascot-shadow" aria-hidden="true"></div>
+      <a href="#cta" class="mascot-bot">
+        <img src={frontmatter.mascotImage} alt="Mascota site-ului" class="mascot-img" />
+        <span class="mascot-tooltip">{frontmatter.mascotTooltip}</span>
+      </a>
+    </div>
+  </div>
+</section>
