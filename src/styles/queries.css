@@ -2,15 +2,6 @@
 Instead, 1em = 1rem = 16px*/
 
   /*********************/
-  /* BELOW 1344px (smaller desktops) */
-  /*********************/
-  @media (max-width: 84em){
-    #page .gallery {
-      grid-template-columns: repeat(3, 1fr);
-    }
-  }
-
-  /*********************/
   /* BELOW 1200px (landscape tablets) */
   /*********************/
 
@@ -23,13 +14,6 @@ Instead, 1em = 1rem = 16px*/
     .grid {
       column-gap: 4.8rem;
       row-gap: 6.4rem;
-    }
-
-    #page .gallery {
-      padding: 1.6rem;
-      max-width: 45rem;
-      align-self: center;
-      grid-template-columns: repeat(3, 1fr);
     }
   }
 
@@ -47,39 +31,8 @@ Instead, 1em = 1rem = 16px*/
       padding: 2.4rem 3.2rem 3.2rem 3.2rem;
     }
 
-    .why-choose-us .grid--2-cols {
-      grid-template-columns: 1fr;
-    }
-
-    #page .why-container {
-      padding: 9.6rem 3.2rem 1.6rem 3.2rem;
-      order: -1;
-      text-align: center;
-    }
-
-    #page .why-item {
-      padding-left: 0;
-      text-align: center;
-    }
-
-    #page .why-item::before {
-      position: static;
-      margin-right: 0.8rem;
-    }
-
     .grid {
       row-gap: 3.2rem;
-    }
-
-    #page .gallery {
-      grid-template-columns: repeat(6, 1fr);
-      max-width: 100%;
-      justify-self: center;
-      padding: 1.6rem;
-    }
-
-    #page .about-grid {
-      grid-template-columns: 5fr 3fr;
     }
 
     #page .cta {
@@ -140,24 +93,6 @@ Instead, 1em = 1rem = 16px*/
       grid-template-columns: repeat(2, 1fr);
     }
 
-    #page .about-grid {
-      grid-template-columns: 1fr;
-    }
-
-    #page .about-heading-box,
-    #page .about-img-box,
-    #page .about-info {
-      grid-column: 1;
-    }
-
-    #page .about-heading-box { grid-row: 1; }
-    #page .about-img-box { grid-row: 2; }
-    #page .about-info { grid-row: 3; }
-
-    #page .about-img {
-      width: 60%;
-    }
-
     .section-blog .grid--3-cols > *:last-child {
       grid-column: 1 / -1;
       max-width: 50%;
@@ -215,11 +150,6 @@ Instead, 1em = 1rem = 16px*/
     .btn:link,
     .btn:visited {
       padding: 2.4rem 1.6rem;
-    }
-
-    #page .gallery {
-      grid-template-columns: repeat(4, 1fr);
-      gap: 1.2rem;
     }
 
     .section-blog .grid--3-cols > *:last-child {
