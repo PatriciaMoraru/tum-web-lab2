@@ -5,14 +5,6 @@ Instead, 1em = 1rem = 16px*/
   /* BELOW 1344px (smaller desktops) */
   /*********************/
   @media (max-width: 84em){
-    #page .hero {
-      max-width: 120rem;
-    }
-
-    .heading-primary {
-      font-size: 4.4rem;
-    }
-
     #page .gallery {
       grid-template-columns: repeat(3, 1fr);
     }
@@ -33,24 +25,12 @@ Instead, 1em = 1rem = 16px*/
       row-gap: 6.4rem;
     }
 
-    .heading-secondary {
-      font-size: 3.6rem;
-    }
-
-    .heading-tertiary {
-      font-size: 2.4rem;
-    }
-
     #page .header {
       padding: 0 3.2rem;
     }
 
     .main-nav-list {
       gap: 3.2rem;
-    }
-
-    #page .hero {
-      gap: 4.8rem;
     }
 
     #page .gallery {
@@ -69,21 +49,6 @@ Instead, 1em = 1rem = 16px*/
   {
     html {
       font-size: 50%;
-    }
-
-    #page .hero {
-      grid-template-columns: 1fr;
-      padding: 0 8rem;
-      gap: 6.4rem;
-    }
-
-    .hero-text-box,
-    .hero-img-box {
-      text-align: center;
-    }
-
-    #page .hero-img {
-      width: 60%
     }
 
     #page .blog-content {
@@ -259,10 +224,6 @@ Instead, 1em = 1rem = 16px*/
       justify-self: center;
     }
 
-    .heading-secondary {
-      margin-bottom: 1.6rem;
-    }
-
     #page .grid--footer {
       grid-template-columns: repeat(2, 1fr);
       row-gap: 6.4rem;
@@ -314,18 +275,6 @@ Instead, 1em = 1rem = 16px*/
     .btn:link,
     .btn:visited {
       padding: 2.4rem 1.6rem;
-    }
-
-    #page .section-hero {
-      padding: 2.4rem 0 6.4rem 0;
-    }
-
-    #page .hero {
-      padding: 0 3.2rem;
-    }
-
-    #page .hero-img {
-      width: 80%;
     }
 
     #page .gallery {
