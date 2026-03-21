@@ -2,15 +2,16 @@
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+import Hero from "../components/Hero.astro";
+
+const heroFile = await import("../content/hero.md");
 ---
 
 <Layout>
   <Header />
 
   <main>
-    <p class="text-3xl font-bold text-center mt-10">
-      Site content will go here
-    </p>
+    <Hero frontmatter={heroFile.frontmatter} />
   </main>
 
   <Footer />
