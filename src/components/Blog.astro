@@ -23,7 +23,7 @@ const { header, posts } = Astro.props;
                   alt={post.imageAlt}
                 />
               )}
-              <div class="blog-content pt-[3.2rem] pb-[4.8rem] px-[4.8rem]">
+              <div class="blog-content pt-[3.2rem] pb-[4.8rem] px-[4.8rem] max-tab:pt-[2.4rem] max-tab:pb-[3.2rem] max-tab:px-[3.2rem]">
                 <div class="blog-tags mb-[1.2rem] flex gap-[0.8rem]">
                   <span class="tag inline-block px-[0.8rem] py-[0.4rem] text-[1.2rem] uppercase text-white rounded-full font-semibold" style={`background-color: ${post.tagColor}`}>{post.tag}</span>
                 </div>
