@@ -4,7 +4,7 @@ const { frontmatter } = Astro.props;
 
 <section class="why-choose-us bg-[#f9f1f2]" id="abordare">
   <div class="container grid grid--2-cols">
-    <div class="gallery grid grid-cols-3 gap-[1.2rem] px-[1.6rem] py-[9.6rem]">
+    <div class="gallery grid grid-cols-3 gap-[1.2rem] px-[1.6rem] py-[9.6rem] max-lt:py-[1.6rem] max-lt:max-w-[45rem] max-lt:self-center max-tab:grid-cols-6 max-tab:max-w-full max-tab:justify-self-center max-sph:grid-cols-4">
       {Array.from({ length: 12 }, (_, i) => i + 1).map((num) => (
         <figure class="gallery-item overflow-hidden rounded-[1px] aspect-square">
           <img
@@ -16,7 +16,7 @@ const { frontmatter } = Astro.props;
       ))}
     </div>
 
-    <div class="why-container px-[3.2rem] py-[9.6rem] flex flex-col justify-center">
+    <div class="why-container px-[3.2rem] py-[9.6rem] flex flex-col justify-center max-tab:-order-1 max-tab:pb-[1.6rem] max-tab:text-center">
       <span class="subheading">{frontmatter.subheading}</span>
       <h2 class="heading-secondary">{frontmatter.heading}</h2>
 
@@ -29,7 +29,7 @@ const { frontmatter } = Astro.props;
 
         <ul class="why-list list-none p-0 my-[2.4rem]">
           {frontmatter.values.map((value: string) => (
-            <li class="why-item relative pl-[3.2rem] text-[2rem] font-medium leading-[1.4] text-[#333] mb-[0.6rem] before:content-['❤'] before:absolute before:left-0 before:top-[0.1rem] before:text-[#c0737a] before:text-[2rem]">
+            <li class="why-item relative pl-[3.2rem] text-[2rem] font-medium leading-[1.4] text-[#333] mb-[0.6rem] before:content-['❤'] before:absolute before:left-0 before:top-[0.1rem] before:text-[#c0737a] before:text-[2rem] max-tab:pl-0 max-tab:text-center max-tab:before:static max-tab:before:mr-[0.8rem]">
               {value}
             </li>
           ))}

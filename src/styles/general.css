@@ -102,6 +102,12 @@ Default: 9px
     grid-template-columns: repeat(4, 1fr);
   }
 
+  @media (max-width: 59em) {
+    .why-choose-us .grid--2-cols {
+      grid-template-columns: 1fr;
+    }
+  }
+
   .grid--center-v {
     align-items: center;
   }

@@ -381,6 +381,10 @@
     padding: 9.6rem 1.6rem;
   } */
 
+  .gallery.grid {
+    gap: 1.2rem;
+  }
+
   /* MIGRATED TO TAILWIND */
   /* .gallery-item {
     overflow: hidden;
