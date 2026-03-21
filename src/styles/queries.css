@@ -27,24 +27,8 @@ Instead, 1em = 1rem = 16px*/
       font-size: 50%;
     }
 
-    #page .blog-content {
-      padding: 2.4rem 3.2rem 3.2rem 3.2rem;
-    }
-
     .grid {
       row-gap: 3.2rem;
-    }
-
-    #page .cta {
-      grid-template-columns: 3fr 2fr;
-    }
-
-    #page .cta-form {
-      grid-template-columns: 1fr;
-    }
-
-    .btn--form {
-      grid-column: 1;
     }
 
     /* Mobile call button */
@@ -79,7 +63,6 @@ Instead, 1em = 1rem = 16px*/
     .mascot-shadow {
       bottom: 7.2rem;
     }
-
   }
 
   /*********************/
@@ -91,43 +74,6 @@ Instead, 1em = 1rem = 16px*/
     .grid--4-cols
     {
       grid-template-columns: repeat(2, 1fr);
-    }
-
-    .section-blog .grid--3-cols > *:last-child {
-      grid-column: 1 / -1;
-      max-width: 50%;
-      justify-self: center;
-    }
-
-    #page .grid--footer {
-      grid-template-columns: repeat(2, 1fr);
-      row-gap: 6.4rem;
-    }
-
-    .nav-col {
-      grid-row: 1;
-      text-align: center;
-    }
-
-    .footer-nav {
-      align-items: center;
-    }
-
-    #page .logo-col,
-    .address-col {
-      text-align: center;
-    }
-
-    #page .logo-col {
-      align-items: center;
-    }
-
-    #page .social-links {
-      justify-content: center;
-    }
-
-    #page .footer {
-      padding: 9.6rem 0;
     }
   }
 
@@ -150,32 +96,5 @@ Instead, 1em = 1rem = 16px*/
     .btn:link,
     .btn:visited {
       padding: 2.4rem 1.6rem;
-    }
-
-    .section-blog .grid--3-cols > *:last-child {
-      width: 100%;
-      max-width: 100%;
-    }
-
-    #page .grid--footer {
-      grid-template-columns: 1fr;
-    }
-
-    #page .grid--footer > .nav-col:first-of-type { grid-row: 1; }
-    #page .grid--footer > .nav-col:last-of-type { grid-row: 2; }
-    #page .grid--footer > .address-col { grid-row: 3; }
-    #page .grid--footer > .logo-col { grid-row: 4; }
-
-    #page .cta {
-      grid-template-columns: 1fr;
-    }
-    
-    .cta-img-box {
-      height: 32rem;
-      grid-row: 1;
-    }
-
-    #page .cta-text-box {
-      padding: 3.2rem 4.8rem 3.2rem 4.8rem;
     }
   }

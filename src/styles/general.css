@@ -217,6 +217,12 @@ Default: 9px
     transition: all 0.3s;
   }
 
+  @media (max-width: 59em) {
+    .btn--form {
+      grid-column: 1;
+    }
+  }
+
   .btn--form:hover {
     background-color: #fff;
     color: #555;
