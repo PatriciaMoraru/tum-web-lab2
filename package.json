@@ -1,0 +1,28 @@
+{
+  "name": "tum-web-lab2",
+  "version": "1.0.0",
+  "description": "A landing page for a gynecology medical practice based in Hincești, Republic of Moldova. The website presents the services, expertise, and professional background of Dr. Aliona Starinschi, offering patients an easy way to learn about the clinic and schedule an appointment.",
+  "main": "index.js",
+  "scripts": {
+  "dev": "astro dev",
+  "build": "astro build",
+  "preview": "astro preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PatriciaMoraru/tum-web-lab2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/PatriciaMoraru/tum-web-lab2/issues"
+  },
+  "homepage": "https://github.com/PatriciaMoraru/tum-web-lab2#readme",
+  "dependencies": {
+    "@tailwindcss/vite": "^4.2.2",
+    "astro": "^6.0.8",
+    "tailwindcss": "^4.2.2"
+  }
+}
