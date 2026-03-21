@@ -1,0 +1,45 @@
+---
+const { header, posts } = Astro.props;
+---
+
+<section class="section-blog py-[9.6rem]" id="blog">
+  <div class="container center-text margin-bottom-md">
+    <span class="subheading">{header.subheading}</span>
+    <h2 class="heading-secondary">{header.heading}</h2>
+  </div>
+
+  <div class="container grid grid--3-cols margin-bottom-md">
+    {posts.map((post: any) => (
+      <a href={`/blog/${post.slug}`} class="blog-box shadow-[0_2.4rem_4.8rem_rgba(0,0,0,0.075)] rounded-[11px] overflow-hidden flex flex-col [transition:all_0.4s] hover:-translate-y-[1.2rem] hover:shadow-[0_3.2rem_6.4rem_rgba(0,0,0,0.06)] no-underline text-inherit">
+        <img
+          src={post.image}
+          class="blog-img w-full"
+          alt={post.imageAlt}
+        />
+        <div class="blog-content pt-[3.2rem] pb-[4.8rem] px-[4.8rem]">
+          <div class="blog-tags mb-[1.2rem] flex gap-[0.8rem]">
+            <span class="tag inline-block px-[0.8rem] py-[0.4rem] text-[1.2rem] uppercase text-white rounded-full font-semibold" style={`background-color: ${post.tagColor}`}>{post.tag}</span>
+          </div>
+          <p class="blog-title text-[2rem] text-[#333] font-semibold mb-[1.2rem]">{post.title}</p>
+          <p class="blog-description text-[1.4rem] leading-[1.6] text-[#777] mb-[2.4rem]">
+            {post.description}
+          </p>
+          <ul class="blog-attributes list-none flex flex-col gap-[1.2rem]">
+            <li class="blog-attribute text-[1.6rem] flex items-center gap-[1.6rem]">
+              <ion-icon class="blog-icon h-[2.4rem] w-[2.4rem] text-[#c0737a]" name="calendar-outline"></ion-icon>
+              <span>{post.date}</span>
+            </li>
+            <li class="blog-attribute text-[1.6rem] flex items-center gap-[1.6rem]">
+              <ion-icon class="blog-icon h-[2.4rem] w-[2.4rem] text-[#c0737a]" name="time-outline"></ion-icon>
+              <span>{post.readingTime}</span>
+            </li>
+          </ul>
+        </div>
+      </a>
+    ))}
+  </div>
+
+  <div class="all-blogs text-center text-[1.8rem]">
+    <a href="#" class="link">Vezi toate articolele &rarr;</a>
+  </div>
+</section>
