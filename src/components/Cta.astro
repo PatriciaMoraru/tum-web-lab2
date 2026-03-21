@@ -4,14 +4,14 @@ const { frontmatter } = Astro.props;
 
 <section class="section-cta pt-[4.8rem] pb-[12.8rem]" id="cta">
   <div class="container">
-    <div class="cta grid grid-cols-[2fr_1fr] bg-[linear-gradient(to_right_bottom,_#cd8f95,_#c0737a)] shadow-[0_2.4rem_4.8rem_rgba(0,0,0,0.15)] rounded-[11px] overflow-hidden">
-      <div class="cta-text-box pt-[4.8rem] pb-[6.4rem] px-[6.4rem] text-[#f9f1f2]">
+      <div class="cta grid grid-cols-[2fr_1fr] bg-[linear-gradient(to_right_bottom,_#cd8f95,_#c0737a)] shadow-[0_2.4rem_4.8rem_rgba(0,0,0,0.15)] rounded-[11px] overflow-hidden max-tab:grid-cols-[3fr_2fr] max-sph:grid-cols-1">
+        <div class="cta-text-box pt-[4.8rem] pb-[6.4rem] px-[6.4rem] text-[#f9f1f2] max-sph:py-[3.2rem] max-sph:px-[4.8rem]">
         <h2 class="heading-secondary !text-inherit mb-[3.2rem]">{frontmatter.heading}</h2>
         <p class="cta-text text-[1.8rem] leading-[1.8] mb-[4rem]">
           {frontmatter.description}
         </p>
 
-        <form class="cta-form grid grid-cols-2 gap-x-[3.2rem] gap-y-[2.4rem]" action="#">
+        <form class="cta-form grid grid-cols-2 gap-x-[3.2rem] gap-y-[2.4rem] max-tab:grid-cols-1" action="#">
           <div class="flex flex-col justify-end">
             <label for="full-name" class="block text-[1.6rem] font-medium mb-[1.2rem]">Numele d-vstră</label>
             <input id="full-name"
@@ -57,7 +57,7 @@ const { frontmatter } = Astro.props;
         </form>
       </div>
       <div
-        class="cta-img-box"
+        class="cta-img-box max-sph:h-[32rem] max-sph:row-start-1"
         role="img"
         aria-label="Doctor appointment">
       </div>
