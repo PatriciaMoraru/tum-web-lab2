@@ -1,0 +1,26 @@
+---
+const { header, services } = Astro.props;
+---
+
+<section class="our-services py-[9.6rem]" id="servicii">
+  <div class="container services-header text-center mb-[4.8rem]">
+    <span class="subheading">{header.subheading}</span>
+    <h2 class="heading-secondary">{header.heading}</h2>
+    <p class="our-services-description text-[1.8rem] leading-[1.6] text-[#6b7280] mb-[4.8rem]">
+      {header.description}
+    </p>
+  </div>
+
+  <div class="container grid grid--3-cols">
+    {services.map((service: any) => (
+      <div class="service-box p-[3.2rem] text-[1.8rem] font-normal text-[#333] bg-[#f6ebec] rounded-[9px] text-center [transition:all_0.5s] hover:-translate-y-[1.2rem] hover:shadow-[0_8px_24px_rgba(0,0,0,0.08)]">
+        <div class="service-icon">
+          <img src={service.image} alt={service.imageAlt} class="w-[6rem] h-[6rem] mb-[2rem] mx-auto" />
+        </div>
+        <p class="service-description">
+          {service.title}
+        </p>
+      </div>
+    ))}
+  </div>
+</section>
