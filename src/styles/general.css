@@ -1,6 +1,14 @@
 @import "tailwindcss/theme";
 @import "tailwindcss/utilities";
 
+@theme {
+  --breakpoint-sph: 34em;
+  --breakpoint-ph: 44em;
+  --breakpoint-tab: 59em;
+  --breakpoint-lt: 75em;
+  --breakpoint-dt: 84em;
+}
+
 /*
 --- 01 TYPOGRAPHY SYSTEM
 
