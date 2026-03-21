@@ -1,0 +1,105 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "public/img"
+public_folder: "/img"
+
+collections:
+  - name: "pages"
+    label: "Page Sections"
+    files:
+      - name: "hero"
+        label: "Hero Section"
+        file: "src/content/hero.md"
+        fields:
+          - { label: "Headline", name: "headline", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Primary CTA", name: "ctaPrimary", widget: "string" }
+          - { label: "Secondary CTA", name: "ctaSecondary", widget: "string" }
+          - { label: "Hero Image", name: "heroImage", widget: "image" }
+          - { label: "Hero Image Alt", name: "heroImageAlt", widget: "string" }
+          - { label: "Mascot Image", name: "mascotImage", widget: "image" }
+          - { label: "Mascot Tooltip", name: "mascotTooltip", widget: "string" }
+
+      - name: "services-header"
+        label: "Services Header"
+        file: "src/content/services-header.md"
+        fields:
+          - { label: "Subheading", name: "subheading", widget: "string" }
+          - { label: "Heading", name: "heading", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+
+      - name: "why-us"
+        label: "Why Us Section"
+        file: "src/content/why-us.md"
+        fields:
+          - { label: "Subheading", name: "subheading", widget: "string" }
+          - { label: "Heading", name: "heading", widget: "string" }
+          - { label: "Descriptions", name: "descriptions", widget: "list", field: { label: "Paragraph", name: "paragraph", widget: "text" } }
+          - { label: "Values", name: "values", widget: "list", field: { label: "Value", name: "value", widget: "string" } }
+          - { label: "CTA Text", name: "ctaText", widget: "string" }
+
+      - name: "about"
+        label: "About Section"
+        file: "src/content/about.md"
+        fields:
+          - { label: "Subheading", name: "subheading", widget: "string" }
+          - { label: "Heading", name: "heading", widget: "string" }
+          - { label: "Image", name: "image", widget: "image" }
+          - { label: "Image Alt", name: "imageAlt", widget: "string" }
+          - label: "Training"
+            name: "training"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Items", name: "items", widget: "list", field: { label: "Item", name: "item", widget: "string" } }
+          - label: "Conferences"
+            name: "conferences"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Items", name: "items", widget: "list", field: { label: "Item", name: "item", widget: "string" } }
+
+      - name: "cta"
+        label: "CTA Section"
+        file: "src/content/cta.md"
+        fields:
+          - { label: "Heading", name: "heading", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+
+      - name: "blog-header"
+        label: "Blog Header"
+        file: "src/content/blog-header.md"
+        fields:
+          - { label: "Subheading", name: "subheading", widget: "string" }
+          - { label: "Heading", name: "heading", widget: "string" }
+
+  - name: "services"
+    label: "Services"
+    folder: "src/content/services"
+    create: true
+    slug: "{{order}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Image Alt", name: "imageAlt", widget: "string" }
+      - { label: "Order", name: "order", widget: "number" }
+
+  - name: "blog"
+    label: "Blog Posts"
+    folder: "src/content/blog"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Image Alt", name: "imageAlt", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime", format: "YYYY-MM-DD" }
+      - { label: "Reading Time", name: "readingTime", widget: "string" }
+      - { label: "Tag", name: "tag", widget: "string" }
+      - { label: "Tag Color", name: "tagColor", widget: "color" }
+      - { label: "Slug", name: "slug", widget: "string" }
+      - { label: "Order", name: "order", widget: "number" }
+      - { label: "Body", name: "body", widget: "markdown" }
