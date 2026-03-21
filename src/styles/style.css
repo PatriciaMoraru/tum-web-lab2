@@ -698,6 +698,12 @@
     grid-template-columns: 1.25fr 1.25fr 1fr 1fr;
   } */
 
+  @media (max-width: 44em) {
+    .grid.grid--footer {
+      row-gap: 6.4rem;
+    }
+  }
+
   /* MIGRATED TO TAILWIND */
   /* .logo-col {
     display: flex;
