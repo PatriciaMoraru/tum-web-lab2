@@ -3,8 +3,18 @@ import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import Hero from "../components/Hero.astro";
+import Services from "../components/Services.astro";
 
-const heroFile = await import("../content/hero.md");
+const heroFileRaw = import.meta.glob("../content/hero.md", { eager: true });
+const heroFile = Object.values(heroFileRaw)[0] as any;
+
+const servicesHeaderRaw = import.meta.glob("../content/services-header.md", { eager: true });
+const servicesHeaderFile = Object.values(servicesHeaderRaw)[0] as any;
+
+const serviceFilesRaw = import.meta.glob("../content/services/*.md", { eager: true });
+const services = Object.values(serviceFilesRaw)
+  .map((file: any) => file.frontmatter)
+  .sort((a: any, b: any) => a.order - b.order);
 ---
 
 <Layout>
@@ -12,6 +22,7 @@ const heroFile = await import("../content/hero.md");
 
   <main>
     <Hero frontmatter={heroFile.frontmatter} />
+    <Services header={servicesHeaderFile.frontmatter} services={services} />
   </main>
 
   <Footer />
