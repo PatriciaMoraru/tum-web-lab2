@@ -1,0 +1,44 @@
+---
+const { frontmatter } = Astro.props;
+---
+
+<section class="why-choose-us bg-[#f9f1f2]" id="abordare">
+  <div class="container grid grid--2-cols">
+    <div class="gallery grid grid-cols-3 gap-[1.2rem] px-[1.6rem] py-[9.6rem]">
+      {Array.from({ length: 12 }, (_, i) => i + 1).map((num) => (
+        <figure class="gallery-item overflow-hidden rounded-[1px] aspect-square">
+          <img
+            src={`/img/gallery/${num}.jpg`}
+            alt={`Gallery ${num}`}
+            class="gallery-img block w-full h-full object-cover [backface-visibility:hidden] [transition:transform_0.4s] hover:scale-110"
+          />
+        </figure>
+      ))}
+    </div>
+
+    <div class="why-container px-[3.2rem] py-[9.6rem] flex flex-col justify-center">
+      <span class="subheading">{frontmatter.subheading}</span>
+      <h2 class="heading-secondary">{frontmatter.heading}</h2>
+
+      <div class="why-text-box flex flex-col justify-center">
+        {frontmatter.descriptions.map((desc: string) => (
+          <p class="why-description text-[2rem] leading-[1.8] mb-[1.6rem]">
+            {desc}
+          </p>
+        ))}
+
+        <ul class="why-list list-none p-0 my-[2.4rem]">
+          {frontmatter.values.map((value: string) => (
+            <li class="why-item relative pl-[3.2rem] text-[2rem] font-medium leading-[1.4] text-[#333] mb-[0.6rem] before:content-['❤'] before:absolute before:left-0 before:top-[0.1rem] before:text-[#c0737a] before:text-[2rem]">
+              {value}
+            </li>
+          ))}
+        </ul>
+
+        <p class="why-cta-text text-[1.8rem] leading-[1.6] font-medium text-[#ad686e] italic">
+          <a href="#cta" class="link">{frontmatter.ctaText} &rarr;</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
