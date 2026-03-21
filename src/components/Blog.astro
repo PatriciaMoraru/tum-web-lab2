@@ -2,44 +2,95 @@
 const { header, posts } = Astro.props;
 ---
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 <section class="section-blog py-[9.6rem]" id="blog">
   <div class="container center-text margin-bottom-md">
     <span class="subheading">{header.subheading}</span>
     <h2 class="heading-secondary">{header.heading}</h2>
   </div>
 
-  <div class="container grid grid--3-cols margin-bottom-md">
-    {posts.map((post: any) => (
-      <a href={`/blog/${post.slug}`} class="blog-box shadow-[0_2.4rem_4.8rem_rgba(0,0,0,0.075)] rounded-[11px] overflow-hidden flex flex-col [transition:all_0.4s] hover:-translate-y-[1.2rem] hover:shadow-[0_3.2rem_6.4rem_rgba(0,0,0,0.06)] no-underline text-inherit">
-        <img
-          src={post.image}
-          class="blog-img w-full"
-          alt={post.imageAlt}
-        />
-        <div class="blog-content pt-[3.2rem] pb-[4.8rem] px-[4.8rem]">
-          <div class="blog-tags mb-[1.2rem] flex gap-[0.8rem]">
-            <span class="tag inline-block px-[0.8rem] py-[0.4rem] text-[1.2rem] uppercase text-white rounded-full font-semibold" style={`background-color: ${post.tagColor}`}>{post.tag}</span>
+  <div class="max-w-[120rem] mx-auto px-[6.4rem] relative">
+    <div class="swiper blog-swiper">
+      <div class="swiper-wrapper pb-[2rem]">
+        {posts.map((post: any) => (
+          <div class="swiper-slide !h-auto p-[1.2rem]">
+            <a href={`/blog/${post.slug}`} class="block rounded-[11px] overflow-hidden flex flex-col transition-all duration-[0.4s] hover:-translate-y-[1.2rem] shadow-[0_0.4rem_1.6rem_rgba(0,0,0,0.1)] hover:shadow-[0_1.2rem_3.2rem_rgba(0,0,0,0.12)] no-underline text-inherit h-full bg-white">
+              {post.image && (
+                <img
+                  src={post.image}
+                  class="blog-img w-full"
+                  alt={post.imageAlt}
+                />
+              )}
+              <div class="blog-content pt-[3.2rem] pb-[4.8rem] px-[4.8rem]">
+                <div class="blog-tags mb-[1.2rem] flex gap-[0.8rem]">
+                  <span class="tag inline-block px-[0.8rem] py-[0.4rem] text-[1.2rem] uppercase text-white rounded-full font-semibold" style={`background-color: ${post.tagColor}`}>{post.tag}</span>
+                </div>
+                <p class="blog-title text-[2rem] text-[#333] font-semibold mb-[1.2rem]">{post.title}</p>
+                <p class="blog-description text-[1.4rem] leading-[1.6] text-[#777] mb-[2.4rem]">
+                  {post.description}
+                </p>
+                <ul class="blog-attributes list-none flex flex-col gap-[1.2rem]">
+                  <li class="blog-attribute text-[1.6rem] flex items-center gap-[1.6rem]">
+                    <ion-icon class="blog-icon h-[2.4rem] w-[2.4rem] text-[#c0737a]" name="calendar-outline"></ion-icon>
+                    <span>{post.date}</span>
+                  </li>
+                  <li class="blog-attribute text-[1.6rem] flex items-center gap-[1.6rem]">
+                    <ion-icon class="blog-icon h-[2.4rem] w-[2.4rem] text-[#c0737a]" name="time-outline"></ion-icon>
+                    <span>{post.readingTime}</span>
+                  </li>
+                </ul>
+              </div>
+            </a>
           </div>
-          <p class="blog-title text-[2rem] text-[#333] font-semibold mb-[1.2rem]">{post.title}</p>
-          <p class="blog-description text-[1.4rem] leading-[1.6] text-[#777] mb-[2.4rem]">
-            {post.description}
-          </p>
-          <ul class="blog-attributes list-none flex flex-col gap-[1.2rem]">
-            <li class="blog-attribute text-[1.6rem] flex items-center gap-[1.6rem]">
-              <ion-icon class="blog-icon h-[2.4rem] w-[2.4rem] text-[#c0737a]" name="calendar-outline"></ion-icon>
-              <span>{post.date}</span>
-            </li>
-            <li class="blog-attribute text-[1.6rem] flex items-center gap-[1.6rem]">
-              <ion-icon class="blog-icon h-[2.4rem] w-[2.4rem] text-[#c0737a]" name="time-outline"></ion-icon>
-              <span>{post.readingTime}</span>
-            </li>
-          </ul>
-        </div>
-      </a>
-    ))}
-  </div>
+        ))}
+      </div>
 
-  <div class="all-blogs text-center text-[1.8rem]">
-    <a href="#" class="link">Vezi toate articolele &rarr;</a>
+      <div class="blog-pagination text-center mt-[2.4rem]"></div>
+    </div>
+
+    <div class="blog-btn-prev !text-[#c0737a] !left-[0.5rem] !w-[4rem]"></div>
+    <div class="blog-btn-next !text-[#c0737a] !right-[0.5rem] !w-[4rem]"></div>
   </div>
 </section>
+
+<script is:inline src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script is:inline>
+  document.addEventListener("DOMContentLoaded", function () {
+    new Swiper(".blog-swiper", {
+      slidesPerView: 1,
+      spaceBetween: 16,
+      loop: true,
+      pagination: {
+        el: ".blog-pagination",
+        clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '" style="background:#c0737a;"></span>';
+        },
+      },
+      navigation: {
+        nextEl: ".blog-btn-next",
+        prevEl: ".blog-btn-prev",
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 16,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 16,
+        },
+      },
+    });
+
+    document.querySelectorAll(".blog-btn-prev, .blog-btn-next").forEach(function(el) {
+      el.classList.add("swiper-button-prev");
+      if (el.classList.contains("blog-btn-next")) {
+        el.classList.remove("swiper-button-prev");
+        el.classList.add("swiper-button-next");
+      }
+    });
+  });
+</script>
