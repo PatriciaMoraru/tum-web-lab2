@@ -2,9 +2,9 @@
 const { frontmatter } = Astro.props;
 ---
 
-<section class="section-hero bg-[#f9f1f2] pt-[4.8rem] pb-[9.6rem]">
-  <div class="hero max-w-[130rem] mx-auto px-[3.2rem] grid grid-cols-2 gap-[9.6rem] items-center">
-    <div class="hero-text-box">
+<section class="section-hero bg-[#f9f1f2] pt-[4.8rem] pb-[9.6rem] max-sph:pt-[2.4rem] max-sph:pb-[6.4rem]">
+  <div class="hero max-w-[130rem] mx-auto px-[3.2rem] grid grid-cols-2 gap-[9.6rem] items-center max-dt:max-w-[120rem] max-lt:gap-[4.8rem] max-tab:grid-cols-1 max-tab:px-[8rem] max-tab:gap-[6.4rem] max-sph:px-[3.2rem]">
+    <div class="hero-text-box max-tab:text-center">
       <h1 class="heading-primary">
         {frontmatter.headline}
       </h1>
@@ -17,8 +17,8 @@ const { frontmatter } = Astro.props;
       <a href="#servicii" class="btn btn--outline">{frontmatter.ctaSecondary} &darr;</a>
     </div>
 
-    <div class="hero-img-box">
-      <img src={frontmatter.heroImage} alt={frontmatter.heroImageAlt} class="hero-img w-full" />
+    <div class="hero-img-box max-tab:text-center">
+      <img src={frontmatter.heroImage} alt={frontmatter.heroImageAlt} class="hero-img w-full max-tab:w-[60%] max-sph:w-[80%]" />
       <div class="mascot-shadow" aria-hidden="true"></div>
       <a href="#cta" class="mascot-bot">
         <img src={frontmatter.mascotImage} alt="Mascota site-ului" class="mascot-img" />
