@@ -1,0 +1,36 @@
+---
+const { frontmatter } = Astro.props;
+---
+
+<section class="about-doctor py-[9.6rem]" id="despre">
+  <div class="container about-grid grid grid-cols-2 gap-x-[6.4rem] items-center">
+    <div class="about-heading-box col-start-1 row-start-1">
+      <span class="subheading">{frontmatter.subheading}</span>
+      <h2 class="heading-secondary">{frontmatter.heading}</h2>
+    </div>
+
+    <div class="about-img-box col-start-2 row-start-1 row-end-3 flex items-center justify-center">
+      <img src={frontmatter.image} alt={frontmatter.imageAlt} class="about-img w-full" />
+    </div>
+
+    <div class="about-info col-start-1 row-start-2 flex flex-col gap-[2.4rem] mt-[3.2rem]">
+      <div class="about-info-block border-t border-solid border-[#ddd] pt-[1.6rem]">
+        <h3 class="heading-tertiary">{frontmatter.training.title}</h3>
+        <ul class="about-list list-none flex flex-col gap-[0.8rem]">
+          {frontmatter.training.items.map((item: string) => (
+            <li>{item}</li>
+          ))}
+        </ul>
+      </div>
+
+      <div class="about-info-block border-t border-solid border-[#ddd] pt-[1.6rem]">
+        <h3 class="heading-tertiary">{frontmatter.conferences.title}</h3>
+        <ul class="about-list list-none flex flex-col gap-[0.8rem]">
+          {frontmatter.conferences.items.map((item: string) => (
+            <li>{item}</li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
