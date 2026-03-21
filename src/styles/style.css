@@ -76,13 +76,7 @@
     background-color: #ad686e;
   }
 
-  /* MOBILE */
-  .btn-mobile-nav {
-    border: none;
-    background: none;
-    cursor: pointer;
-    display: none;
-  }
+  /* MOBILE - btn-mobile-nav and icon display now in Tailwind (Header.astro) */
 
   .icon-mobile-nav {
     height: 4.8rem;
@@ -90,8 +84,11 @@
     color: #333;
   }
 
-  .icon-mobile-nav[name="close-outline"] {
-    display: none;
+  @media (max-width: 59em) {
+    .main-nav-link:link,
+    .main-nav-link:visited {
+      font-size: 3rem;
+    }
   }
   
   /*********************/
