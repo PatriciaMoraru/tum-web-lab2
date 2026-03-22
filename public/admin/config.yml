@@ -90,7 +90,8 @@ collections:
     label: "Blog Posts"
     folder: "src/content/blog"
     create: true
-    slug: "{{slug}}"
+    # Matches existing files: 1-control-anual.md, 2-..., 3-... — short slug, not full title
+    slug: "{{order}}-{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "text" }

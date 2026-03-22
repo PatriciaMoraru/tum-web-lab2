@@ -1,4 +1,6 @@
 ---
+import { formatBlogDate } from "../utils/formatBlogDate";
+
 const { header, posts } = Astro.props;
 ---
 
@@ -34,7 +36,7 @@ const { header, posts } = Astro.props;
                 <ul class="blog-attributes list-none flex flex-col gap-[1.2rem]">
                   <li class="blog-attribute text-[1.6rem] flex items-center gap-[1.6rem]">
                     <ion-icon class="blog-icon h-[2.4rem] w-[2.4rem] text-[#c0737a]" name="calendar-outline"></ion-icon>
-                    <span>{post.date}</span>
+                    <span>{formatBlogDate(post.date)}</span>
                   </li>
                   <li class="blog-attribute text-[1.6rem] flex items-center gap-[1.6rem]">
                     <ion-icon class="blog-icon h-[2.4rem] w-[2.4rem] text-[#c0737a]" name="time-outline"></ion-icon>

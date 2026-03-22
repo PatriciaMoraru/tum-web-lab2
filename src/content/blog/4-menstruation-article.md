@@ -1,13 +1,13 @@
 ---
 title: "Menstruațiile neregulate: când sunt normale și când trebuie investigate"
-description: Articol despre echilibrul hormonal și sănătatea ginecologică
-image: /img/cycle.jpg
-imageAlt: menstruation
-date: 2026-03-22
-readingTime: 5 min de citit
-tag: Educație
+description: "Articol despre echilibrul hormonal și sănătatea ginecologică"
+image: "/img/cycle.jpg"
+imageAlt: "menstruation"
+date: "2026-03-22"
+readingTime: "5 min de citit"
+tag: "Educație"
 tagColor: "#f1ad4a"
-slug: menstruation-article
+slug: "menstruation-article"
 order: 4
 ---
 Ciclul menstrual nu este întotdeauna perfect regulat, iar mici variații pot apărea în mod normal. Totuși, atunci când menstruațiile devin foarte rare, foarte dese, abundente sau lipsesc pentru perioade lungi, este important să ceri sfatul unui medic ginecolog.

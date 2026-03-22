@@ -2,6 +2,7 @@
 import Layout from "../../layouts/Layout.astro";
 import Header from "../../components/Header.astro";
 import Footer from "../../components/Footer.astro";
+import { formatBlogDate } from "../../utils/formatBlogDate";
 
 export function getStaticPaths() {
   const blogFilesRaw = import.meta.glob("../../content/blog/*.md", { eager: true });
@@ -36,7 +37,7 @@ const { Content } = post;
         <div class="flex gap-[2.4rem] text-[1.6rem] text-[#777] mb-[4.8rem]">
           <span class="flex items-center gap-[0.8rem]">
             <ion-icon name="calendar-outline"></ion-icon>
-            {post.frontmatter.date}
+            {formatBlogDate(post.frontmatter.date)}
           </span>
           <span class="flex items-center gap-[0.8rem]">
             <ion-icon name="time-outline"></ion-icon>
