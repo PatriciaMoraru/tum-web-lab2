@@ -10,7 +10,7 @@ tag: Prevenție
 tagColor: "#919e85"
 slug: test-papanicolau
 order: 3
-draft: true
+draft: false
 ---
 
 Testul Babeș-Papanicolau (sau testul Pap) este una dintre cele mai eficiente metode de screening pentru cancerul de col uterin. Este un test simplu, rapid și nedureros, care poate detecta modificări celulare anormale înainte ca acestea să devină canceroase.
