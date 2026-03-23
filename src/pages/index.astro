@@ -32,6 +32,7 @@ const blogHeaderFile = Object.values(blogHeaderRaw)[0] as any;
 const blogFilesRaw = import.meta.glob("../content/blog/*.md", { eager: true });
 const blogPosts = Object.values(blogFilesRaw)
   .map((file: any) => file.frontmatter)
+  .filter((fm: any) => !fm.draft)
   .sort((a: any, b: any) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
 const ctaRaw = import.meta.glob("../content/cta.md", { eager: true });

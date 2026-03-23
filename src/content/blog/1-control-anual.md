@@ -9,6 +9,7 @@ tag: "Sănătate"
 tagColor: "#42b7b2"
 slug: "control-anual"
 order: 1
+draft: false
 ---
 
 Controlul ginecologic anual este unul dintre cele mai importante gesturi pe care o femeie le poate face pentru sănătatea sa. Chiar și în absența simptomelor, vizita regulată la medicul ginecolog permite depistarea precoce a unor afecțiuni care, tratate la timp, au un prognostic excelent.

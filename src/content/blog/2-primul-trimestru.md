@@ -9,6 +9,7 @@ tag: "Sarcină"
 tagColor: "#f7afab"
 slug: "primul-trimestru"
 order: 2
+draft: false
 ---
 
 Primul trimestru de sarcină (săptămânile 1–12) este o perioadă de transformări majore, atât pentru viitoarea mamă, cât și pentru bebeluș. Este momentul în care se formează organele principale ale fătului și în care corpul mamei se adaptează la noua sarcină.

@@ -90,7 +90,6 @@ collections:
     label: "Blog Posts"
     folder: "src/content/blog"
     create: true
-    # Matches existing files: 1-control-anual.md, 2-..., 3-... — short slug, not full title
     slug: "{{order}}-{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
@@ -103,4 +102,5 @@ collections:
       - { label: "Tag Color", name: "tagColor", widget: "color" }
       - { label: "Slug", name: "slug", widget: "string" }
       - { label: "Order", name: "order", widget: "number" }
+      - { label: "Draft", name: "draft", widget: "boolean", default: true }
       - { label: "Body", name: "body", widget: "markdown" }

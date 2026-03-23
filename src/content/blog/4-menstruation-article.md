@@ -9,6 +9,7 @@ tag: "Educație"
 tagColor: "#f1ad4a"
 slug: "menstruation-article"
 order: 4
+draft: false
 ---
 Ciclul menstrual nu este întotdeauna perfect regulat, iar mici variații pot apărea în mod normal. Totuși, atunci când menstruațiile devin foarte rare, foarte dese, abundente sau lipsesc pentru perioade lungi, este important să ceri sfatul unui medic ginecolog.
 
