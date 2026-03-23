@@ -1,15 +1,16 @@
 ---
-title: "Testul Papanicolau — de ce nu trebuie amânat"
-description: "Screeningul pentru cancerul de col uterin salvează vieți. Află cât de simplu este testul și de ce este recomandat pentru fiecare femeie."
-image: "/img/blog/3.jpg"
-imageAlt: "Articol despre prevenție"
-date: "2026-01-05"
-readingTime: "4 min de citit"
-tag: "Prevenție"
+title: Testul Papanicolau — de ce nu trebuie amânat
+description: Screeningul pentru cancerul de col uterin salvează vieți. Află cât
+  de simplu este testul și de ce este recomandat pentru fiecare femeie.
+image: /img/blog/3.jpg
+imageAlt: Articol despre prevenție
+date: 2026-01-05
+readingTime: 4 min de citit
+tag: Prevenție
 tagColor: "#919e85"
-slug: "test-papanicolau"
+slug: test-papanicolau
 order: 3
-draft: false
+draft: true
 ---
 
 Testul Babeș-Papanicolau (sau testul Pap) este una dintre cele mai eficiente metode de screening pentru cancerul de col uterin. Este un test simplu, rapid și nedureros, care poate detecta modificări celulare anormale înainte ca acestea să devină canceroase.
